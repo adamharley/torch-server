@@ -5,7 +5,7 @@ Building on the work of radu706 of the Torch Discord getting the CLI version of 
 
 If copying an existing world, make sure to change the path of `<LoadWorld>` in `SpaceEngineers-Dedicated.cfg` to `Z:\opt\torch-server\Instance\Saves\`. If you want to create a world within the Torch GUI, change `<Autostart>` to false in `Torch.cfg`, remove the `-autostart` flag in supervisord.conf and restart.
 
-**Note:** Unlike the Docker image, this script **is** able to be easily isolated under its own user and will add a dedicated user `torch-server`.
+**Note:** Unlike the Docker image, this script *is* able to be easily isolated under its own user and will add a dedicated user `torch-server`.
 
 **Warning:** This setup is experimental. Performance appears to be optimal with 4 vCPUs made available, 8 actually causes performance to drop. Wine is weird.
 
