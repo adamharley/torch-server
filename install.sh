@@ -8,6 +8,7 @@ apt-get install --no-install-recommends -y \
 	cabextract \
 	net-tools \
 	novnc \
+	passwd \
 	procps \
 	sudo \
 	supervisor \
