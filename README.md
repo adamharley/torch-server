@@ -7,7 +7,7 @@ If copying an existing world, make sure to change the path of `<LoadWorld>` in `
 
 **Note:** Unlike the Docker image, this script *is* able to be easily isolated under its own user and will add a dedicated user `torch-server`.
 
-**Warning:** This setup is experimental. Performance appears to be optimal with 4 vCPUs made available, 8 actually causes performance to drop. Wine is weird.
+**Warning:** This setup is experimental. Wine is weird. More CPU cores being available may make performance worse. Your mileage will probably vary.
 
 Ports
 -----
