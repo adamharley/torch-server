@@ -27,7 +27,7 @@ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetric
 chmod +x /usr/bin/winetricks
 
 # Add server user
-useradd -mrUs /bin/bash torch-server
+useradd -mrU torch-server
 
 # Copy supervisord.conf
 cp supervisord.conf /opt/torch-server/supervisord.conf
@@ -38,7 +38,7 @@ sudo -i -u torch-server bash << EOF
 	winetricks sound=disabled
 	winetricks vd=800x600
 	winetricks windowmanagermanaged=n
-	W_OPT_UNATTENDED=1 xvfb-run winetricks \
+	W_OPT_UNATTENDED=1 WINEPREFIX=/home/torch-server/.wine xvfb-run winetricks \
 		arial \
 		dotnet462 \
 		vcrun2013 \

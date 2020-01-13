@@ -31,4 +31,4 @@ Build Notes
 -----------
 * See Docker image for initial build notes
 * Running supervisord as another user to the current one does not change `WINEPREFIX` accordingly
-* Server user must be assigned Bash shell for `winetricks` to work properly
+* `WINEPREFIX` must be manually set for `winetricks` to work properly with complex verbs
