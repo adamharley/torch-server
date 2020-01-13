@@ -23,6 +23,7 @@ Scripts
 
 Known Bugs
 ----------
+* Install script is prone to failing to install silently when switching to the `torch-server` user, if this happens, try deleting `.mono`, praising Clang and running the commands manually
 * Torch themes don't work
 * Keen's remote API doesn't work
 
