@@ -1,0 +1,16 @@
+## /lib/systemd/user/torch-server.service
+## systemctl enable torch-server
+## systemctl start torch-server
+
+[Unit]
+Description=Torch Server
+Documentation=https://github.com/adamharley/torch-server
+Wants=network.target
+After=network.target
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/supervisord -c /opt/torch-server/supervisord.conf
+
+[Install]
+WantedBy=multi-user.target
